@@ -16,10 +16,30 @@
 // Snack 2
 // Inserisci un numero, se è pari stampa il numero, se è dispari stampa il numero successivo
 
-var utente = parseInt ( prompt("Inserisci un numero") );
+// var utente = parseInt ( prompt("Inserisci un numero") );
 
-if ( utente % 2 === 0){
-    console.log("Numero pari");
-}else if ( utente % 2 !== 0){
-    console.log("Numero dispari");
+// if ( utente % 2 === 0){
+//     console.log("Numero pari");
+// }else if ( utente % 2 !== 0){
+//     console.log("Numero dispari");
+// }
+
+// Snack 3
+// Generatore di “nomi cognomi” casuali: prendendo una lista di nomi e una lista di cognomi, Gatsby vuole generare una falsa lista di 3 invitati.
+
+var nomi = ["fabio", "lorenzo", "paolo", "alberto"];
+var cognomi = ["rossi", "bianchi", "verdi", "blu"];
+
+var numeroPreLista = 3;
+
+var lista = "";
+
+for ( var i = 0; i < numeroPreLista; i++){
+    lista += nomi[Math.floor(Math.random() * nomi.length)];
+    console.log(lista);
+}
+
+for ( var i = 0; i < numeroPreLista; i++){
+    lista += cognomi[Math.floor(Math.random() * cognomi.length)];
+    console.log(lista);
 }
